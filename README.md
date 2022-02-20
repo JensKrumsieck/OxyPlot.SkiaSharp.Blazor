@@ -9,9 +9,36 @@
 
 The cross-platform plotting library - [OxyPlot](https://github.com/oxyplot/oxyplot) - is now available for Webassembly using Blazor and SkiaSharp.
 
+⚠️ Depends on a **preview release** of SkiaSharp!
+
 <img src="https://github.com/JensKrumsieck/OxyPlot.SkiaSharp.Blazor/raw/main/.github/screen.png" alt="Screenshot" width="600" />
 
 ### [LIVE DEMO](https://blazor-playground.vercel.app/plot/)
+
+### Installation
+```
+dotnet add package OxyPlot.SkiaSharp.Blazor
+```
+
+### Usage
+```razor
+<PlotView Model=model style="height: 30vh"/>
+@code{
+    private PlotModel model = new PlotModel();
+    ...
+    protected override async Task OnInitializedAsync()
+    {
+        var data = GetSomeDataPoints(); //get datapoint array from somewhere
+        var spc = new LineSeries()
+        {
+            ItemsSource = data,                
+            Title = "UV/Vis Data",
+            TrackerFormatString = "{0}<br/>{1}: {2:0.00} - {3}: {4:0.00}"
+        };
+        model.Series.Add(spc);
+    }
+}
+```
 
 Requirements:
 * .NET 6.0 (lower .NET versions are impossible due to a novelty introduced in 6.0)
