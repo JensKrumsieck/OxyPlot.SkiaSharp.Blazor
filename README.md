@@ -1,4 +1,5 @@
 # OxyPlot.SkiaSharp.Blazor
+[![NuGet Badge](https://buildstats.info/nuget/OxyPlot.SkiaSharp.Blazor?includePreReleases=true)](https://www.nuget.org/packages/OxyPlot.SkiaSharp.Blazor/)
 [![Maintainability](https://api.codeclimate.com/v1/badges/18aab64564a3aaa27138/maintainability)](https://codeclimate.com/github/JensKrumsieck/OxyPlot.SkiaSharp.Blazor/maintainability)
 [![.NET](https://github.com/JensKrumsieck/OxyPlot.SkiaSharp.Blazor/actions/workflows/dotnet.yml/badge.svg)](https://github.com/JensKrumsieck/OxyPlot.SkiaSharp.Blazor/actions/workflows/dotnet.yml)
 [![GitHub issues](https://img.shields.io/github/issues/JensKrumsieck/OxyPlot.SkiaSharp.Blazor)](https://github.com/JensKrumsieck/OxyPlot.SkiaSharp.Blazor/issues)
