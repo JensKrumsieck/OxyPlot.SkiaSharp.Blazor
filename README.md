@@ -10,7 +10,7 @@ The cross-platform plotting library - [OxyPlot](https://github.com/oxyplot/oxypl
 
 <img src="https://github.com/JensKrumsieck/OxyPlot.SkiaSharp.Blazor/raw/main/.github/screen.png" alt="Screenshot" width="600" />
 
-### [LIVE DEMO](https://blazor-playground.vercel.app/)
+### [LIVE DEMO](https://blazor-playground.vercel.app/plot/)
 
 Requirements:
 * .NET 6.0 (lower .NET versions are impossible due to a novelty introduced in 6.0)
