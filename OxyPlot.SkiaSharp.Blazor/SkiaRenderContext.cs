@@ -872,7 +872,10 @@ public class SkiaRenderContext : IRenderContext, IDisposable
                     var weight = (FontWeightToString.ContainsKey((int)fontWeight) ? FontWeightToString[(int)fontWeight]: "Regular");
                     var filename = $"{fontFamily}-{weight}.ttf".ToLower();
                     Console.WriteLine($"Load Font {filename}");
-                    foreach (var item in assembly!.GetManifestResourceNames().Where(item => item.ToLower().EndsWith(filename)))
+
+                    var matches = assembly!.GetManifestResourceNames().Where(item => item.ToLower().EndsWith(filename));
+                    if (!matches.Any()) matches = assembly!.GetManifestResourceNames().Where(item => item.ToLower().EndsWith(fontFamily + ".ttf"));
+                    foreach (var item in matches)
                     {
                         var s = assembly.GetManifestResourceStream(item);
                         typeface = SKTypeface.FromStream(s);
