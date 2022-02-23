@@ -4,7 +4,7 @@
 // </copyright>
 // --------------------------------------------------------------------------------------------------------------------
 //modified copy of https://github.com/oxyplot/oxyplot/blob/develop/Source/OxyPlot.SkiaSharp/SkiaRenderContext.cs
-
+// see https://github.com/oxyplot/oxyplot/pull/1857
 
 using System.Reflection;
 using SkiaSharp;
