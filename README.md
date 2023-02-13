@@ -9,7 +9,6 @@
 
 The cross-platform plotting library - [OxyPlot](https://github.com/oxyplot/oxyplot) - is now available for Webassembly using Blazor and [SkiaSharp](https://github.com/mono/SkiaSharp).
 
-⚠️ Depends on a **preview release** of SkiaSharp!
 
 <img src="https://github.com/JensKrumsieck/OxyPlot.SkiaSharp.Blazor/raw/main/.github/screen.png" alt="Screenshot" width="600" />
 
